@@ -12,29 +12,30 @@ public class Mediapunta extends MedioCentro {
 	public int getAsistencias() {
 		return asistencias;
 	}
-	
+
 	@Override
 	public void mostrarDatos() {
-
-		System.out.println(getDorsal());
-		System.out.println(getEquipo());
-		System.out.println(getNombre());
-		System.out.println(getPasesCompletados());
-		System.out.println(getAsistencias());
-		System.out.println("Medio centro, Media punta");
+		System.out.println("Informacion del Jugador");
+		System.out.println("Posicion: Mediapunta");
+		System.out.println("Nombre: " + getNombre());
+		System.out.println("Dorsal: " + getDorsal());
+		System.out.println("Equipo actual: " + getEquipo());
+		System.out.println("------------------");
+		System.out.println("Pases completados: " + getPasesCompletados());
+		System.out.println("Asistencias: " + getAsistencias());
 	}
 
 	@Override
 	public String toString() {
-		return "Mediapunta [asistencias=" + asistencias + ", getAsistencias()=" + getAsistencias()
-				+ ", getPasesCompletados()=" + getPasesCompletados() + ", getNombre()=" + getNombre() + ", getDorsal()="
-				+ getDorsal() + ", getEquipo()=" + getEquipo() + "]";
+		return "Delantero: Nombre=" + getNombre() + ", Dorsal=" + getDorsal() + ", Equipo=" + getEquipo()
+				+ ", Pases completados=" + getPasesCompletados() + ", Asistencias=" + getAsistencias();
 	}
+
 	@Override
 	public boolean equals(Object otro) {// compara this con otro
 		Mediapunta Mediapunta = (Mediapunta) otro;
 		boolean iguales;
-		if (this.getDorsal()==(Mediapunta.getDorsal()) && this.getEquipo() == Mediapunta.getEquipo()) {
+		if (this.getDorsal() == (Mediapunta.getDorsal()) && this.getEquipo() == Mediapunta.getEquipo()) {
 			iguales = true;
 		} else {
 			iguales = false;
@@ -42,7 +43,5 @@ public class Mediapunta extends MedioCentro {
 		return iguales;
 
 	}
-	
-	
 
 }

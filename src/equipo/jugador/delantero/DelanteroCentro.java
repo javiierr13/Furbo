@@ -17,20 +17,19 @@ public class DelanteroCentro extends Delantero {
 	public void mostrarDatos() {
 		System.out.println("Informacion del Jugador");
 		System.out.println("Posicion: Delantero Centro");
-		System.out.println("Nombre: "+getNombre());
-		System.out.println("Dorsal: "+getDorsal());
-		System.out.println("Equipo actual: "+getEquipo());
+		System.out.println("Nombre: " + getNombre());
+		System.out.println("Dorsal: " + getDorsal());
+		System.out.println("Equipo actual: " + getEquipo());
 		System.out.println("------------------");
-		System.out.println("Goles: "+ getGoles());
-		System.out.println( "Goles de penalti: "+getGolesDePenalti());
-		
-	
+		System.out.println("Goles: " + getGoles());
+		System.out.println("Goles de penalti: " + getGolesDePenalti());
+
 	}
 
 	@Override
 	public String toString() {
-		return "Delantero: Nombre=" + getNombre() + ", Dorsal=" + getDorsal()
-				+ ", Equipo=" + getEquipo() + ", Goles=" + getGoles() + "Goles de penalti=" + golesDePenalti;
+		return "Delantero: Nombre=" + getNombre() + ", Dorsal=" + getDorsal() + ", Equipo=" + getEquipo() + ", Goles="
+				+ getGoles() + "Goles de penalti=" + golesDePenalti;
 	}
 
 	@Override

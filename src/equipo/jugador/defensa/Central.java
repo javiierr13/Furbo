@@ -14,20 +14,21 @@ public class Central extends Defensa {
 	}
 
 	@Override
-	public String toString() {
-		return "Central [entradas=" + entradas + ", getNombre()=" + getNombre() + ", getDorsal()=" + getDorsal()
-				+ ", getEquipo()=" + getEquipo() + "]";
+	public void mostrarDatos() {
+		System.out.println("Informacion del Jugador");
+		System.out.println("Posicion: Central");
+		System.out.println("Nombre: " + getNombre());
+		System.out.println("Dorsal: " + getDorsal());
+		System.out.println("Equipo actual: " + getEquipo());
+		System.out.println("------------------");
+		System.out.println("Disputas realizadas: " + getDisputasRealizadas());
+		System.out.println("Entradas realizadas: " + getEntradas());
 	}
 
 	@Override
-	public void mostrarDatos() {
-
-		System.out.println(getDorsal());
-		System.out.println(getEquipo());
-		System.out.println(getNombre());
-		System.out.println(getDisputasRealizadas());
-		System.out.println(getEntradas());
-		System.out.println("Defensa, Central");
+	public String toString() {
+		return "Delantero: Nombre=" + getNombre() + ", Dorsal=" + getDorsal() + ", Equipo=" + getEquipo()
+				+ ", Disputas Realizadas=" + getDisputasRealizadas() + ", Entradas realizadas=" + getEntradas();
 	}
 
 	@Override

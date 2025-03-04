@@ -1,9 +1,8 @@
 package equipo.jugador.mediocentro;
 
 import equipo.jugador.Jugador;
-import equipo.jugador.portero.Portero;
 
-public class MedioCentro extends Jugador {
+public abstract class MedioCentro extends Jugador {
 
 	private int pasesCompletados;
 
@@ -11,43 +10,39 @@ public class MedioCentro extends Jugador {
 		super(nombre, dorsal, equipo);
 		this.pasesCompletados = pasesCompletados;
 	}
-	
 
 	public int getPasesCompletados() {
 		return pasesCompletados;
 	}
 
-
-	@Override
-	public void mostrarDatos() {
-
-		System.out.println(getDorsal());
-		System.out.println(getEquipo());
-		System.out.println(getNombre());
-		System.out.println(getPasesCompletados());
-		System.out.println("Medio centro");
-	}
-
-
-	@Override
-	public String toString() {
-		return "MedioCentro [pasesCompletados=" + pasesCompletados + ", getPasesCompletados()=" + getPasesCompletados()
-				+ ", getNombre()=" + getNombre() + ", getDorsal()=" + getDorsal() + ", getEquipo()=" + getEquipo()
-				+ "]";
-	}
-	@Override
-	public boolean equals(Object otro) {// compara this con otro
-		MedioCentro MedioCentro = (MedioCentro) otro;
-		boolean iguales;
-		if (this.getDorsal()==(MedioCentro.getDorsal()) && this.getEquipo() == MedioCentro.getEquipo()) {
-			iguales = true;
-		} else {
-			iguales = false;
-		}
-		return iguales;
-
-	}
-	
-	
+//	@Override
+//	public void mostrarDatos() {
+//		System.out.println("Informacion del Jugador");
+//		System.out.println("Posicion: Medio centro");
+//		System.out.println("Nombre: " + getNombre());
+//		System.out.println("Dorsal: " + getDorsal());
+//		System.out.println("Equipo actual: " + getEquipo());
+//		System.out.println("------------------");
+//		System.out.println(getPasesCompletados());
+//	}
+//
+//	@Override
+//	public String toString() {
+//		return "Delantero: Nombre=" + getNombre() + ", Dorsal=" + getDorsal() + ", Equipo=" + getEquipo()
+//				+ ", Pases completados=" + getPasesCompletados();
+//	}
+//
+//	@Override
+//	public boolean equals(Object otro) {// compara this con otro
+//		MedioCentro MedioCentro = (MedioCentro) otro;
+//		boolean iguales;
+//		if (this.getDorsal() == (MedioCentro.getDorsal()) && this.getEquipo() == MedioCentro.getEquipo()) {
+//			iguales = true;
+//		} else {
+//			iguales = false;
+//		}
+//		return iguales;
+//
+//	}
 
 }
