@@ -10,5 +10,32 @@ public class Extremo extends Delantero {
 		super(nombre, dorsal, equipo, goles);
 		this.puesto = puesto;
 	}
+	
+	
+	public Puesto getPuesto() {
+		return puesto;
+	}
+
+
+	@Override
+	public void mostrarDatos() {
+
+		System.out.println(getDorsal());
+		System.out.println(getEquipo());
+		System.out.println(getNombre());
+		System.out.println(getGoles());
+		System.out.println(getPuesto());
+		System.out.println("Delantero, Extremo");
+	
+	}
+
+
+	@Override
+	public String toString() {
+		return "Extremo [puesto=" + puesto + ", getPuesto()=" + getPuesto() + ", getGoles()=" + getGoles()
+				+ ", getNombre()=" + getNombre() + ", getDorsal()=" + getDorsal()
+				+ ", getEquipo()=" + getEquipo() + "]";
+	}
+	
 
 }

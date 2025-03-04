@@ -18,7 +18,21 @@ public class Defensa extends Jugador {
 		System.out.println(getDorsal());
 		System.out.println(getEquipo());
 		System.out.println(getNombre());
+		System.out.println(getDisputasRealizadas());
 		System.out.println("Defensa");		
 	}
+	
+
+	public int getDisputasRealizadas() {
+		return disputasRealizadas;
+	}
+
+	@Override
+	public String toString() {
+		return "Defensa [disputasRealizadas=" + disputasRealizadas + ", getNombre()=" + getNombre() + ", getDorsal()="
+				+ getDorsal() + ", getEquipo()=" + getEquipo() + "]";
+	}
+	
+	
 
 }

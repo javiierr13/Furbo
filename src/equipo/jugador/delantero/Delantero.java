@@ -10,6 +10,12 @@ public class Delantero extends Jugador {
 		super(nombre, dorsal, equipo);
 		this.goles = goles;
 	}
+	
+
+	public int getGoles() {
+		return goles;
+	}
+
 
 	@Override
 	public void mostrarDatos() {
@@ -17,8 +23,16 @@ public class Delantero extends Jugador {
 		System.out.println(getDorsal());
 		System.out.println(getEquipo());
 		System.out.println(getNombre());
+		System.out.println(getGoles());
 		System.out.println("Delantero");
 	
 	}
+
+	@Override
+	public String toString() {
+		return "Delantero [goles=" + goles + ", getNombre()=" + getNombre() + ", getDorsal()=" + getDorsal()
+				+ ", getEquipo()=" + getEquipo() + "]";
+	}
+	
 
 }
