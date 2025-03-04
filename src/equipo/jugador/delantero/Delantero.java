@@ -20,19 +20,21 @@ public class Delantero extends Jugador {
 
 	@Override
 	public void mostrarDatos() {
-
-		System.out.println(getDorsal());
-		System.out.println(getEquipo());
-		System.out.println(getNombre());
-		System.out.println(getGoles());
-		System.out.println("Delantero");
+		System.out.println("Informacion del Jugador");
+		System.out.println("Posicion: Delantero");
+		System.out.println("Nombre: "+getNombre());
+		System.out.println("Dorsal: "+getDorsal());
+		System.out.println("Equipo actual: "+getEquipo());
+		System.out.println("------------------");
+		System.out.println("Goles: "+ getGoles());
+		
 	
 	}
 
 	@Override
 	public String toString() {
-		return "Delantero [goles=" + goles + ", getNombre()=" + getNombre() + ", getDorsal()=" + getDorsal()
-				+ ", getEquipo()=" + getEquipo() + "]";
+		return "Delantero: Nombre=" + getNombre() + ", Dorsal=" + getDorsal()
+				+ ", Equipo=" + getEquipo() + ", Goles=" + goles ;
 	}
 	
 	@Override
