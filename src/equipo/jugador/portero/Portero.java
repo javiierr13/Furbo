@@ -1,5 +1,15 @@
 package equipo.jugador.portero;
 
-public class Portero {
+import equipo.jugador.Jugador;
+
+public class Portero extends Jugador {
+	
+	private int paradas;
+
+	@Override
+	public void mostrarDatos() {
+		// TODO Auto-generated method stub
+		
+	}
 
 }
