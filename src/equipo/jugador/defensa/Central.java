@@ -1,5 +1,5 @@
 package equipo.jugador.defensa;
 
-public class Central {
-
+public class Central extends Defensa {
+	private int entradas;
 }
