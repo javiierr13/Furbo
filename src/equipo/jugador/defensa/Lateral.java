@@ -6,13 +6,18 @@ public class Lateral extends Defensa {
 
 	private Puesto puesto;
 
-	public Lateral(String nombre, int dorsal, String equipo, int disputasRealizadas, Puesto puesto) {
+	public Lateral(String nombre, int dorsal, String equipo, int disputasRealizadas, String string) {
 		super(nombre, dorsal, equipo, disputasRealizadas);
-		this.puesto = puesto;
+		setPuesto(string);
 	}
 
 	public Puesto getPuesto() {
 		return puesto;
+	}
+	
+
+	public void setPuesto(String puesto) {
+		this.puesto = Puesto.valueOf(puesto);
 	}
 
 	@Override
