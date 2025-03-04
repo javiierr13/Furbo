@@ -15,6 +15,10 @@ public class Defensa extends Jugador {
 	public void mostrarDatos() {
 		// TODO Auto-generated method stub
 
+		System.out.println(getDorsal());
+		System.out.println(getEquipo());
+		System.out.println(getNombre());
+		System.out.println("Defensa");		
 	}
 
 }

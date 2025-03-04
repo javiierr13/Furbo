@@ -8,8 +8,10 @@ public class Delantero extends Jugador {
 
 	@Override
 	public void mostrarDatos() {
-		// TODO Auto-generated method stub
-		
+		System.out.println(getDorsal());
+		System.out.println(getEquipo());
+		System.out.println(getNombre());
+		System.out.println("Delantero");		
 	}
 
 }
