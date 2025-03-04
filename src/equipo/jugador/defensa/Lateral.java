@@ -1,5 +1,9 @@
 package equipo.jugador.defensa;
 
-public class Lateral {
+import equipo.jugador.Puesto;
+
+public class Lateral extends Defensa {
+
+	private Puesto puesto;
 
 }
