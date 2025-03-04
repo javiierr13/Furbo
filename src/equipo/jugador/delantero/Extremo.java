@@ -10,12 +10,10 @@ public class Extremo extends Delantero {
 		super(nombre, dorsal, equipo, goles);
 		setPuesto(puesto);
 	}
-	
 
 	public void setPuesto(String puesto) {
 		this.puesto = Puesto.valueOf(puesto);
 	}
-
 
 	public Puesto getPuesto() {
 		return puesto;
@@ -28,9 +26,9 @@ public class Extremo extends Delantero {
 		System.out.println("Nombre: " + getNombre());
 		System.out.println("Dorsal: " + getDorsal());
 		System.out.println("Equipo actual: " + getEquipo());
-		System.out.println("------------------");
 		System.out.println("Goles: " + getGoles());
 		System.out.println("Puesto: " + puesto);
+		System.out.println("------------------");
 
 	}
 

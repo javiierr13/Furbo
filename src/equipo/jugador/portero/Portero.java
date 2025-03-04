@@ -22,8 +22,9 @@ public class Portero extends Jugador {
 		System.out.println("Nombre: " + getNombre());
 		System.out.println("Dorsal: " + getDorsal());
 		System.out.println("Equipo actual: " + getEquipo());
-		System.out.println("------------------");
 		System.out.println("Numero de paradas: " + getParadas());
+		System.out.println("------------------");
+
 
 	}
 

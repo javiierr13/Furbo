@@ -20,9 +20,10 @@ public class Mediapunta extends MedioCentro {
 		System.out.println("Nombre: " + getNombre());
 		System.out.println("Dorsal: " + getDorsal());
 		System.out.println("Equipo actual: " + getEquipo());
-		System.out.println("------------------");
 		System.out.println("Pases completados: " + getPasesCompletados());
 		System.out.println("Asistencias: " + getAsistencias());
+		System.out.println("------------------");
+
 	}
 
 	@Override

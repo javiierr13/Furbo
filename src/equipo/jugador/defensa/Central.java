@@ -20,9 +20,10 @@ public class Central extends Defensa {
 		System.out.println("Nombre: " + getNombre());
 		System.out.println("Dorsal: " + getDorsal());
 		System.out.println("Equipo actual: " + getEquipo());
-		System.out.println("------------------");
 		System.out.println("Disputas realizadas: " + getDisputasRealizadas());
 		System.out.println("Entradas realizadas: " + getEntradas());
+		System.out.println("------------------");
+
 	}
 
 	@Override

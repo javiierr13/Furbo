@@ -14,7 +14,6 @@ public class Lateral extends Defensa {
 	public Puesto getPuesto() {
 		return puesto;
 	}
-	
 
 	public void setPuesto(String puesto) {
 		this.puesto = Puesto.valueOf(puesto);
@@ -27,9 +26,10 @@ public class Lateral extends Defensa {
 		System.out.println("Nombre: " + getNombre());
 		System.out.println("Dorsal: " + getDorsal());
 		System.out.println("Equipo actual: " + getEquipo());
-		System.out.println("------------------");
 		System.out.println("Disputas realizadas: " + getDisputasRealizadas());
 		System.out.println("Lateral: " + getPuesto());
+		System.out.println("------------------");
+
 	}
 
 	@Override
