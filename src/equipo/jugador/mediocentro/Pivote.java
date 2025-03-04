@@ -8,5 +8,28 @@ public class Pivote extends MedioCentro {
 		super(nombre, dorsal, equipo, pasesCompletados);
 		this.intercepciones = intercepciones;
 	}
+	
+	public int getIntercepciones() {
+		return intercepciones;
+	}
+
+	@Override
+	public void mostrarDatos() {
+
+		System.out.println(getDorsal());
+		System.out.println(getEquipo());
+		System.out.println(getNombre());
+		System.out.println(getPasesCompletados());
+		System.out.println(getIntercepciones());
+		System.out.println("Medio centro, pivote");
+	}
+
+	@Override
+	public String toString() {
+		return "Pivote [intercepciones=" + intercepciones + ", getIntercepciones()=" + getIntercepciones()
+				+ ", getPasesCompletados()=" + getPasesCompletados() + ", getNombre()=" + getNombre() + ", getDorsal()="
+				+ getDorsal() + ", getEquipo()=" + getEquipo() + "]";
+	}
+	
 
 }
