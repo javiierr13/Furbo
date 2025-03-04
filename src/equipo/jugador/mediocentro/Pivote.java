@@ -8,7 +8,7 @@ public class Pivote extends MedioCentro {
 		super(nombre, dorsal, equipo, pasesCompletados);
 		this.intercepciones = intercepciones;
 	}
-	
+
 	public int getIntercepciones() {
 		return intercepciones;
 	}
@@ -30,6 +30,18 @@ public class Pivote extends MedioCentro {
 				+ ", getPasesCompletados()=" + getPasesCompletados() + ", getNombre()=" + getNombre() + ", getDorsal()="
 				+ getDorsal() + ", getEquipo()=" + getEquipo() + "]";
 	}
-	
+
+	@Override
+	public boolean equals(Object otro) {// compara this con otro
+		Pivote Pivote = (Pivote) otro;
+		boolean iguales;
+		if (this.getDorsal() == (Pivote.getDorsal()) && this.getEquipo() == Pivote.getEquipo()) {
+			iguales = true;
+		} else {
+			iguales = false;
+		}
+		return iguales;
+
+	}
 
 }

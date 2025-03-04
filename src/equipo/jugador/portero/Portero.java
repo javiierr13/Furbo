@@ -10,12 +10,10 @@ public class Portero extends Jugador {
 		super(nombre, dorsal, equipo);
 		this.paradas = paradas;
 	}
-	
 
 	public int getParadas() {
 		return paradas;
 	}
-
 
 	@Override
 	public void mostrarDatos() {
@@ -26,12 +24,22 @@ public class Portero extends Jugador {
 
 	}
 
-
 	@Override
 	public String toString() {
 		return "Portero [paradas=" + paradas + ", getParadas()=" + getParadas() + ", getNombre()=" + getNombre()
 				+ ", getDorsal()=" + getDorsal() + ", getEquipo()=" + getEquipo() + "]";
 	}
-	
 
+	@Override
+	public boolean equals(Object otro) {// compara this con otro
+		Portero otroPortero = (Portero) otro;
+		boolean iguales;
+		if (this.getDorsal()==(otroPortero.getDorsal()) && this.getEquipo() == otroPortero.getEquipo()) {
+			iguales = true;
+		} else {
+			iguales = false;
+		}
+		return iguales;
+
+	}
 }

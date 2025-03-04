@@ -30,6 +30,18 @@ public class Mediapunta extends MedioCentro {
 				+ ", getPasesCompletados()=" + getPasesCompletados() + ", getNombre()=" + getNombre() + ", getDorsal()="
 				+ getDorsal() + ", getEquipo()=" + getEquipo() + "]";
 	}
+	@Override
+	public boolean equals(Object otro) {// compara this con otro
+		Mediapunta Mediapunta = (Mediapunta) otro;
+		boolean iguales;
+		if (this.getDorsal()==(Mediapunta.getDorsal()) && this.getEquipo() == Mediapunta.getEquipo()) {
+			iguales = true;
+		} else {
+			iguales = false;
+		}
+		return iguales;
+
+	}
 	
 	
 
