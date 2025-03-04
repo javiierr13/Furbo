@@ -15,20 +15,20 @@ public class Pivote extends MedioCentro {
 
 	@Override
 	public void mostrarDatos() {
-
-		System.out.println(getDorsal());
-		System.out.println(getEquipo());
-		System.out.println(getNombre());
-		System.out.println(getPasesCompletados());
-		System.out.println(getIntercepciones());
-		System.out.println("Medio centro, pivote");
+		System.out.println("Informacion del Jugador");
+		System.out.println("Posicion: Pivote");
+		System.out.println("Nombre: " + getNombre());
+		System.out.println("Dorsal: " + getDorsal());
+		System.out.println("Equipo actual: " + getEquipo());
+		System.out.println("------------------");
+		System.out.println("Pases completados: " + getPasesCompletados());
+		System.out.println("Intercepciones: " + getIntercepciones());
 	}
 
 	@Override
 	public String toString() {
-		return "Pivote [intercepciones=" + intercepciones + ", getIntercepciones()=" + getIntercepciones()
-				+ ", getPasesCompletados()=" + getPasesCompletados() + ", getNombre()=" + getNombre() + ", getDorsal()="
-				+ getDorsal() + ", getEquipo()=" + getEquipo() + "]";
+		return "Delantero: Nombre=" + getNombre() + ", Dorsal=" + getDorsal() + ", Equipo=" + getEquipo()
+				+ ", Pases completados=" + getPasesCompletados() + ", Intercepciones=" + getIntercepciones();
 	}
 
 	@Override

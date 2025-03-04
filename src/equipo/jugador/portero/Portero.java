@@ -17,24 +17,27 @@ public class Portero extends Jugador {
 
 	@Override
 	public void mostrarDatos() {
-		System.out.println(getDorsal());
-		System.out.println(getEquipo());
-		System.out.println(getParadas());
-		System.out.println("Portero");
+		System.out.println("Informacion del Jugador");
+		System.out.println("Posicion: Portero");
+		System.out.println("Nombre: " + getNombre());
+		System.out.println("Dorsal: " + getDorsal());
+		System.out.println("Equipo actual: " + getEquipo());
+		System.out.println("------------------");
+		System.out.println("Numero de paradas: " + getParadas());
 
 	}
 
 	@Override
 	public String toString() {
-		return "Portero [paradas=" + paradas + ", getParadas()=" + getParadas() + ", getNombre()=" + getNombre()
-				+ ", getDorsal()=" + getDorsal() + ", getEquipo()=" + getEquipo() + "]";
+		return "Delantero: Nombre=" + getNombre() + ", Dorsal=" + getDorsal() + ", Equipo=" + getEquipo()
+				+ ", Numero de paradas=" + getParadas();
 	}
 
 	@Override
 	public boolean equals(Object otro) {// compara this con otro
 		Portero otroPortero = (Portero) otro;
 		boolean iguales;
-		if (this.getDorsal()==(otroPortero.getDorsal()) && this.getEquipo() == otroPortero.getEquipo()) {
+		if (this.getDorsal() == (otroPortero.getDorsal()) && this.getEquipo() == otroPortero.getEquipo()) {
 			iguales = true;
 		} else {
 			iguales = false;
