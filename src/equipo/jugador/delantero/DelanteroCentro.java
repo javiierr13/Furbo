@@ -8,12 +8,10 @@ public class DelanteroCentro extends Delantero {
 		super(nombre, dorsal, equipo, goles);
 		this.golesDePenalti = golesDePenalti;
 	}
-	
-	
+
 	public int getGolesDePenalti() {
 		return golesDePenalti;
 	}
-
 
 	@Override
 	public void mostrarDatos() {
@@ -24,16 +22,26 @@ public class DelanteroCentro extends Delantero {
 		System.out.println(getGoles());
 		System.out.println(getGolesDePenalti());
 		System.out.println("Delantero, Centro");
-	
-	}
 
+	}
 
 	@Override
 	public String toString() {
 		return "DelanteroCentro [golesDePenalti=" + golesDePenalti + ", getGoles()=" + getGoles() + ", toString()="
 				+ super.toString() + ", getNombre()=" + getNombre() + ", getDorsal()=" + getDorsal() + "]";
 	}
-	
-	
+
+	@Override
+	public boolean equals(Object otro) {// compara this con otro
+		DelanteroCentro DelanteroCentro = (DelanteroCentro) otro;
+		boolean iguales;
+		if (this.getDorsal() == (DelanteroCentro.getDorsal()) && this.getEquipo() == DelanteroCentro.getEquipo()) {
+			iguales = true;
+		} else {
+			iguales = false;
+		}
+		return iguales;
+
+	}
 
 }

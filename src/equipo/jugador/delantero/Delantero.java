@@ -1,6 +1,7 @@
 package equipo.jugador.delantero;
 
 import equipo.jugador.Jugador;
+import equipo.jugador.mediocentro.MedioCentro;
 
 public class Delantero extends Jugador {
 
@@ -34,5 +35,17 @@ public class Delantero extends Jugador {
 				+ ", getEquipo()=" + getEquipo() + "]";
 	}
 	
+	@Override
+	public boolean equals(Object otro) {// compara this con otro
+		Delantero Delantero = (Delantero) otro;
+		boolean iguales;
+		if (this.getDorsal()==(Delantero.getDorsal()) && this.getEquipo() == Delantero.getEquipo()) {
+			iguales = true;
+		} else {
+			iguales = false;
+		}
+		return iguales;
+
+	}
 
 }

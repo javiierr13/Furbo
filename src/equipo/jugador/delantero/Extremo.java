@@ -10,12 +10,10 @@ public class Extremo extends Delantero {
 		super(nombre, dorsal, equipo, goles);
 		this.puesto = puesto;
 	}
-	
-	
+
 	public Puesto getPuesto() {
 		return puesto;
 	}
-
 
 	@Override
 	public void mostrarDatos() {
@@ -26,16 +24,27 @@ public class Extremo extends Delantero {
 		System.out.println(getGoles());
 		System.out.println(getPuesto());
 		System.out.println("Delantero, Extremo");
-	
-	}
 
+	}
 
 	@Override
 	public String toString() {
 		return "Extremo [puesto=" + puesto + ", getPuesto()=" + getPuesto() + ", getGoles()=" + getGoles()
-				+ ", getNombre()=" + getNombre() + ", getDorsal()=" + getDorsal()
-				+ ", getEquipo()=" + getEquipo() + "]";
+				+ ", getNombre()=" + getNombre() + ", getDorsal()=" + getDorsal() + ", getEquipo()=" + getEquipo()
+				+ "]";
 	}
-	
+
+	@Override
+	public boolean equals(Object otro) {// compara this con otro
+		Extremo Extremo = (Extremo) otro;
+		boolean iguales;
+		if (this.getDorsal() == (Extremo.getDorsal()) && this.getEquipo() == Extremo.getEquipo()) {
+			iguales = true;
+		} else {
+			iguales = false;
+		}
+		return iguales;
+
+	}
 
 }

@@ -1,6 +1,7 @@
 package equipo.jugador.mediocentro;
 
 import equipo.jugador.Jugador;
+import equipo.jugador.portero.Portero;
 
 public class MedioCentro extends Jugador {
 
@@ -33,6 +34,18 @@ public class MedioCentro extends Jugador {
 		return "MedioCentro [pasesCompletados=" + pasesCompletados + ", getPasesCompletados()=" + getPasesCompletados()
 				+ ", getNombre()=" + getNombre() + ", getDorsal()=" + getDorsal() + ", getEquipo()=" + getEquipo()
 				+ "]";
+	}
+	@Override
+	public boolean equals(Object otro) {// compara this con otro
+		MedioCentro MedioCentro = (MedioCentro) otro;
+		boolean iguales;
+		if (this.getDorsal()==(MedioCentro.getDorsal()) && this.getEquipo() == MedioCentro.getEquipo()) {
+			iguales = true;
+		} else {
+			iguales = false;
+		}
+		return iguales;
+
 	}
 	
 	
