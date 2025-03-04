@@ -18,6 +18,7 @@ public class Delantero extends Jugador {
 		System.out.println(getEquipo());
 		System.out.println(getNombre());
 		System.out.println("Delantero");
+	
 	}
 
 }
