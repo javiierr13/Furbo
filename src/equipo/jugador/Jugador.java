@@ -7,4 +7,20 @@ public abstract class Jugador {
 	
 	
 	public abstract void mostrarDatos();
+
+
+	public String getNombre() {
+		return nombre;
+	}
+
+
+	public int getDorsal() {
+		return dorsal;
+	}
+
+
+	public String getEquipo() {
+		return Equipo;
+	}
+	
 }
