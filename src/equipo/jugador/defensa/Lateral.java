@@ -34,7 +34,7 @@ public class Lateral extends Defensa {
 
 	@Override
 	public String toString() {
-		return "Delantero: Nombre=" + getNombre() + ", Dorsal=" + getDorsal() + ", Equipo=" + getEquipo()
+		return "Defensa lateral: Nombre=" + getNombre() + ", Dorsal=" + getDorsal() + ", Equipo=" + getEquipo()
 				+ ", Disputas Realizadas=" + getDisputasRealizadas() + ", Lateral=" + getPuesto();
 	}
 

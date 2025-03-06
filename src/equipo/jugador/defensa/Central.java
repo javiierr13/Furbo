@@ -28,7 +28,7 @@ public class Central extends Defensa {
 
 	@Override
 	public String toString() {
-		return "Delantero: Nombre=" + getNombre() + ", Dorsal=" + getDorsal() + ", Equipo=" + getEquipo()
+		return "Defensa central: Nombre=" + getNombre() + ", Dorsal=" + getDorsal() + ", Equipo=" + getEquipo()
 				+ ", Disputas Realizadas=" + getDisputasRealizadas() + ", Entradas realizadas=" + getEntradas();
 	}
 

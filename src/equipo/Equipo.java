@@ -11,7 +11,7 @@ public class Equipo {
 
 	public void mostrarOnce() {
 		for (int i = 0; i < alineacion.length; i++) {
-			System.out.println(alineacion[i] + alineacion[i].getNombre() + alineacion[i].getDorsal());
+			System.out.println(i +" "+ alineacion[i].getNombre() +" "+alineacion[i].getDorsal());
 		}
 	}
 }

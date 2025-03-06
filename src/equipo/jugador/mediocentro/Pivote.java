@@ -28,7 +28,7 @@ public class Pivote extends MedioCentro {
 
 	@Override
 	public String toString() {
-		return "Delantero: Nombre=" + getNombre() + ", Dorsal=" + getDorsal() + ", Equipo=" + getEquipo()
+		return "Medio centro Pivote: Nombre=" + getNombre() + ", Dorsal=" + getDorsal() + ", Equipo=" + getEquipo()
 				+ ", Pases completados=" + getPasesCompletados() + ", Intercepciones=" + getIntercepciones();
 	}
 
