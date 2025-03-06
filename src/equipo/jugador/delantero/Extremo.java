@@ -34,7 +34,7 @@ public class Extremo extends Delantero {
 
 	@Override
 	public String toString() {
-		return "Delantero: Nombre=" + getNombre() + ", Dorsal=" + getDorsal() + ", Equipo=" + getEquipo() + ", Goles="
+		return "Delantero extremo: Nombre=" + getNombre() + ", Dorsal=" + getDorsal() + ", Equipo=" + getEquipo() + ", Goles="
 				+ getGoles() + "Puesto" + puesto;
 	}
 

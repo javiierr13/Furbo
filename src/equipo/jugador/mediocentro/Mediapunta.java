@@ -28,7 +28,7 @@ public class Mediapunta extends MedioCentro {
 
 	@Override
 	public String toString() {
-		return "Delantero: Nombre=" + getNombre() + ", Dorsal=" + getDorsal() + ", Equipo=" + getEquipo()
+		return "Mediocentro MediaPunta: Nombre=" + getNombre() + ", Dorsal=" + getDorsal() + ", Equipo=" + getEquipo()
 				+ ", Pases completados=" + getPasesCompletados() + ", Asistencias=" + getAsistencias();
 	}
 

@@ -30,7 +30,7 @@ public class Portero extends Jugador {
 
 	@Override
 	public String toString() {
-		return "Delantero: Nombre=" + getNombre() + ", Dorsal=" + getDorsal() + ", Equipo=" + getEquipo()
+		return "Portero: Nombre=" + getNombre() + ", Dorsal=" + getDorsal() + ", Equipo=" + getEquipo()
 				+ ", Numero de paradas=" + getParadas();
 	}
 
