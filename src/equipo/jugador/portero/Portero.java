@@ -44,6 +44,6 @@ public class Portero extends Jugador {
 			iguales = false;
 		}
 		return iguales;
-
+			
 	}
 }
